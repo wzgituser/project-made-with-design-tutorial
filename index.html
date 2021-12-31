@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrapColection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+        <a href="#"class="logo">Metal<span>ScrapHouse</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="imgs\black-24dp\2x\outline_menu_black_24dp.png" alt="menu">
+
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="imgs\xxx.png" alt="x-cancel">
+            <ul class="primary-nav">
+                <li ><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul class="secondary-nav">
+                 <li><a href="#">Co-operation</a></li>
+                <li class="contact"><a  href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+            <p class="subhead">It's not Nitty &amp; Gritty</p>
+            <h1>Bring your metal junk and gain your wallet</h1>
+            <div class="hero-cta">
+                <a href="#" class="primary-cta">Try to gain $</a>
+               
+                <a href="https://www.youtube.com/watch?v=VxA9zmIbzy0" class="watch-video-cta">
+                <img src="imgs\1x\outline_videocam_black_24dp.png" alt="watch video" class="watch-video">Watch a video  
+                </a>
+                </div>
+            </div>
+        </div>
+         
+    </section>
+    <section class="features-section">
+        <!-- <img src="imgs\1x\outline_videocam_black_24dp.png" alt="metal cutting">  -->
+        <div class="container">
+           <ul class="feature-list">
+                <li>Unlimited take in</li>
+                <li>Sms price tracker for chosen</li>
+                <li>Price bid posibility</li>
+                <li>Colection posibility </li>
+                <li>Cooperation.. to discuse</li>
+                <li>Any idea.Ask!</li>
+            </ul>
+        <img class="img-photo" src="imgs\kołowrotki800x600.jpg" alt="metal man">
+        </div>
+    </section>
+    <section class="testimonial">
+        
+        <div class="container"></div>
+        <ul>
+            <li>
+                <img src="imgs\john doe1.jpg" alt="">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eveniet temporibus necessitatibus, rerum corporis atque libero non incidunt id ut, voluptatibus at repellat possimus numquam dolor, laborum delectus quia fuga.</blockquote>
+            
+            <cite> John Doe</cite>
+           </li> 
+            <li>
+                <img src="imgs\jim doe1.jpg" alt="">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eveniet temporibus necessitatibus, rerum corporis atque libero non incidunt id ut, voluptatibus at repellat possimus numquam dolor, laborum delectus quia fuga.</blockquote>
+            
+            <cite> Jorge Doe</cite>
+           </li> 
+            <li>
+                <img src="imgs\ceo.jpg" alt="">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eveniet temporibus necessitatibus, rerum corporis atque libero non incidunt id ut, voluptatibus at repellat possimus numquam dolor, laborum delectus quia fuga.</blockquote>
+            
+            <cite> Dog Doe</cite>
+           </li> 
+        </ul>
+        <section class="contact-section">
+               <div class="containner">
+                   <div class="contact-left">
+                       <h2>contact</h2>
+                       <form action="">
+                           <label for="name">Name</label>
+                           <input type="text" id="name" name="name">
+
+                            <label for="email"Email>Email</label>
+                            <input type="email" id="email-el" >
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="30" rows="10" id="message"></textarea>
+
+                            <input type="submit" class="send-message-ctv" value="Send message">
+                        </form>
+                   </div>
+                   <div class="map-el">
+                    <iframe width="425" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=23.160370588302616%2C53.12207288809532%2C23.168588876724247%2C53.12574267894294&amp;layer=mapnik&amp;marker=53.12390782268528%2C23.164479732513428" style="border: none"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=53.12391&amp;mlon=23.16448#map=17/53.12391/23.16448">Wyświetl większą mapę</a></small>
+                   </div>
+               </div>
+               
+        </section>
+    <script>
+        const mobileBtn = document.getElementById("mobile-cta");
+              nav = document.querySelector('nav');
+              mobileBtnExit = document.getElementById('mobile-exit')
+
+
+        mobileBtn.addEventListener("click", function() {
+            nav.classList.add("menu-btn");
+        })
+        mobileBtnExit.addEventListener('click', function() {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+    
+</body>
+</html>
